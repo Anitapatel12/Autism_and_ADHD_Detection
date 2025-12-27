@@ -214,7 +214,7 @@ def faq():
 import google.generativeai as genai
 from flask import request, jsonify
 
-genai.configure(api_key="AIzaSyBPLQhSHlTswP8h_-FJIg_oMafB_NKKEYI")
+genai.configure(GEMINI_API)
 
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
